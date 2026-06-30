@@ -1,0 +1,44 @@
+.container {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    animation: moveSquare 3s linear infinite;
+}
+
+@keyframes moveSquare {
+  0% {
+    transform: translate(0, 0);
+    background-color: blue;
+  }
+
+  25% {
+    transform: translate(200px, 0);
+    background-color: green;
+  }
+
+  50% {
+    transform: translate(200px, -200px);
+    background-color: yellow;
+  }
+
+  75% {
+    transform: translate(0, -200px);
+    background-color: red;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    background-color: blue;
+  }
+}
